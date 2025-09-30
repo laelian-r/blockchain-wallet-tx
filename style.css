@@ -127,6 +127,12 @@ h2 {
     margin-bottom: 1rem;
 }
 
+.fusion {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
 .wallet-address {
     color: var(--text-secondary);
     font-size: 0.85rem;
@@ -235,15 +241,27 @@ h2 {
 
 /* Responsive Design */
 @media (min-width: 1024px) {
+    body {
+        padding-left: 16rem;
+        padding-right: 16rem;
+    }
+
     .fusion {
         display: flex;
-        align-items: center;
+        flex-direction: row;
+        align-items: stretch;
         justify-content: space-between;
         gap: 1rem;
     }
 
     .fusion section {
         width: 100%;
+    }
+
+    .fusion section .sold-eth {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
         height: 100%;
     }
 }
