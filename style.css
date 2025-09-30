@@ -54,7 +54,11 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+}
+
+form label {
+    width: 100%;
+    text-align: start;
 }
 
 form p {
@@ -62,6 +66,7 @@ form p {
     color: var(--text-secondary);
     text-align: center;
     word-break: break-all;
+    margin-top: 1rem;
 }
 
 .block-input {
@@ -244,6 +249,15 @@ h2 {
     body {
         padding-left: 16rem;
         padding-right: 16rem;
+    }
+
+    form .block-input {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    form .block-input input[type="text"] {
+        flex: 1;
     }
 
     .fusion {
