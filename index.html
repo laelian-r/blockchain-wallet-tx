@@ -5,8 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blockchain-Wallet</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Blockchain-Wallet</h1>
+        <header>
+            <h1>Wallet Viewer</h1>
+            <p>Entrez une adresse de Wallet pour visualiser l'ensemble des transactions.</p>
+        </header>
+
+        <main>
+            <form action="/">
+                <div class="block-input">
+                    <label for="address-ethereum">Address Ethereum</label>
+                    <input type="text" name="address-ethereum" id="address_ethereum" placeholder="0x..." required>
+                    <input type="submit" value="Voir le Wallet">
+                </div>
+                <p>Astuce : essayez l'adresse de Vitalik : 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045</p>
+            </form>
+
+            <!-- Section Sold ETH -->
+            <div class="fusion">
+                <section class="sold-eth-section">
+                    <article class="sold-eth">
+                        <h2>Sold ETH</h2>
+                        <p class="wallet-address">0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045</p>
+                        <p class="eth-amount">29.585487 ETH</p>
+                    </article>
+                </section>
+
+                <section>
+                    <h2>Transactions récentes</h2>
+                    <div class="transaction-list">
+                        <article>
+                            <span class="transaction-type in">IN</span>
+                            <span class="transaction-amount">0.0001 ETH</span>
+                            <button class="voir-btn">Voir</button>
+                        </article>
+                        <article>
+                            <span class="transaction-type out">OUT</span>
+                            <span class="transaction-amount">0.0001 ETH</span>
+                            <button class="voir-btn">Voir</button>
+                        </article>
+                        <article>
+                            <span class="transaction-type in">IN</span>
+                            <span class="transaction-amount">0.5241 ETH</span>
+                            <button class="voir-btn">Voir</button>
+                        </article>
+                    </div>
+                </section>
+            </div>
+
+            <section class="console">
+                <h2>Console</h2>
+                <article>
+                    <p>Chargement du wallet</p>
+                    <p>0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045</p>
+                </article>
+            </section>
+        </main>
+
+    <script src="./main.js"></script>
 </body>
 </html>
